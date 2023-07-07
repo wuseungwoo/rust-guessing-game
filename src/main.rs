@@ -14,7 +14,7 @@ fn main() {
         let mut _guess = String::new();
         //前端读取输入赋值给已创建的字符串
         io::stdin().read_line(&mut _guess).expect("读取输入失败！");
-        println!("你的数字就是：{_guess}");
+        println!("你的数字就是：{}", _guess);
         //将字符串转型为32位数字
         let _guess: u32 = _guess.trim().parse().expect("看看你摁的是数字么？？？");
 
